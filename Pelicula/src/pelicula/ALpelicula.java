@@ -27,8 +27,8 @@ public class ALpelicula implements java.io.Serializable{
     }
     public void altas(){
         Scanner Leer = new Scanner(System.in);
-        char cond = 's';
-        while(cond == 's'){
+        char cond = 'y';
+        while(cond == 'y'){
             Pelicula objpeli = new Pelicula();
             System.out.println("De la clave : ");
             objpeli.setClave(Leer.nextInt());
@@ -38,7 +38,7 @@ public class ALpelicula implements java.io.Serializable{
             System.out.println("Del costo : ");
             objpeli.setCosto(Leer.nextInt());
             ALpeli.add(objpeli);
-            System.out.println("Más pelis ???  s / n");
+            System.out.println("Desea agregar más peliculas ???  s / n");
             cond = Leer.next().charAt(0);
         }
     }
